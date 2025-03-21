@@ -1,0 +1,144 @@
+/* Brand Styling */
+.v-brand {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.tech-brand {
+    color: #333333;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* Payment Section */
+.payment-section {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+.payment-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.mpesa-logo {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Form Styling */
+.payment-form {
+    margin-top: 2rem;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.15);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    color: #666;
+}
+
+.form-text {
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Pay Button */
+.pay-button {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.pay-button:hover {
+    background: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.2);
+}
+
+.pay-button:active {
+    transform: translateY(0);
+}
+
+/* Payment Info */
+.payment-info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.payment-info h5 {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.payment-info ol {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.payment-info li {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.payment-info li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .payment-section {
+        padding: 100px 0 50px;
+    }
+
+    .v-brand,
+    .tech-brand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .payment-card {
+        padding: 1.5rem;
+    }
+
+    .mpesa-logo {
+        width: 150px;
+        height: 45px;
+    }
+
+    .payment-info {
+        padding: 1rem;
+    }
+}
